@@ -50,11 +50,9 @@ import "./index.css";
    through your own server and keep the keys there.
    ===================================================== */
 
-// const SARVAM_KEY = "sk_z4xclos7_VeS5w3hs8jdJZqFMYwnPmEfc";
 const SARVAM_KEY = import.meta.env.VITE_SARVAM_KEY;
 const SARVAM_MODEL = "saaras:v3";
 const SARVAM_MODE = "transcribe"; // keeps the Hindi words; Gemini then translates and checks them
-// const GEMINI_KEY = "AQ.Ab8RN6LEkRkZoddBXX2uUNfdoBkcUGwhuN9aSCtzrtFex0m-Dw";
 const GEMINI_KEY = import.meta.env.VITE_GEMINI_KEY;
 const GEMINI_MODEL = "gemini-3.1-flash-lite"; // change if Google renames it
 // "https://api.sarvam.ai/speech-to-text" = direct call from the browser.
