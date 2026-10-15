@@ -36,55 +36,45 @@ const minHi = MIN_BILLED_MINUTES % 60 === 0 ? `${MIN_BILLED_MINUTES / 60} घं
    written down but not enforced by the app yet. */
 export const payTerms = [
   {
-    icon: "⏱️",
     en: "You are paid per hour at the agreed rate. Time is counted only from Start Job to End Job.",
     hi: "भुगतान तय रेट पर घंटे के हिसाब से होता है। समय सिर्फ़ 'काम शुरू' से 'काम खत्म' तक गिना जाता है।",
   },
   {
-    icon: "🔒",
     en: "Once a request is accepted, the hourly rate is locked. It can change only if both sides agree.",
     hi: "अनुरोध मंज़ूर होने के बाद रेट तय हो जाता है। रेट तभी बदलेगा जब दोनों पक्ष राज़ी हों।",
   },
   {
-    icon: "🔢",
     en: "The customer gives you a 4-digit OTP to start the job and a new one to end it. Never share an OTP with anyone else.",
     hi: "काम शुरू करने के लिए ग्राहक आपको 4 अंकों का OTP देगा और खत्म करने के लिए नया OTP। OTP किसी और को न बताएँ।",
   },
   {
-    icon: "🧮",
     en: `Minimum billing is ${minEn} per day. After that, time is rounded up to every ${BILLING_BLOCK_MINUTES} minutes.`,
     hi: `हर दिन कम से कम ${minHi} का भुगतान मिलेगा। उसके बाद समय हर ${BILLING_BLOCK_MINUTES} मिनट के हिसाब से ऊपर गोल किया जाएगा।`,
   },
   {
-    icon: "💰",
     en: "The customer pays you in cash or UPI right after End Job. Tap 'Payment received' only after you have been paid.",
     hi: "काम खत्म होते ही ग्राहक आपको नकद या UPI से पैसे देगा। पैसे मिलने के बाद ही 'पैसे मिल गए' दबाइए।",
   },
   {
-    icon: "🕑",
     en: "Jobs marked 'Pay by time' have no fixed price because the work is not known in advance. You tell your hourly rate, and the customer pays for the time worked.",
     hi: "'समय के हिसाब से भुगतान' वाले काम का कोई तय दाम नहीं होता, क्योंकि काम पहले से पता नहीं होता। आप अपना घंटे का रेट बताइए, ग्राहक काम के समय के हिसाब से पैसे देगा।",
   },
   {
-    icon: "🧰",
     en: "Spare parts, materials and travel cost are not part of the hourly pay. Agree on them before you start.",
     hi: "पुर्ज़े, सामान और आने-जाने का खर्च घंटे की मज़दूरी में शामिल नहीं है। काम शुरू करने से पहले इन पर बात कर लीजिए।",
     guideline: true,
   },
   {
-    icon: "📅",
     en: "If you cannot come, cancel at least 2 hours before the start time. Repeated no-shows can lead to account review.",
     hi: "अगर आप नहीं आ सकते, तो शुरू होने से कम से कम 2 घंटे पहले रद्द करें। बार-बार न आने पर खाते की जाँच हो सकती है।",
     guideline: true,
   },
   {
-    icon: "🚫",
     en: "Never pay anyone to get a job. Rozgaar does not charge workers. Report anyone who asks for money.",
     hi: "काम पाने के लिए किसी को पैसे न दें। रोज़गार मज़दूरों से कोई फ़ीस नहीं लेता। पैसे माँगने वाले की शिकायत करें।",
     guideline: true,
   },
   {
-    icon: "⚠️",
     en: "If you disagree about the hours or the pay, do not argue at the site. Contact support and the start and end times will be checked.",
     hi: "अगर घंटों या पैसों पर मतभेद हो, तो वहाँ बहस न करें। सहायता से संपर्क करें, शुरू और खत्म होने का समय जाँचा जाएगा।",
     guideline: true,
